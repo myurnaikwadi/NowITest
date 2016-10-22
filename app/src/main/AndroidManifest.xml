@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nowitest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+
+    <application
+        android:name=".Controller"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".activity.TestListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.StartTestActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity
+            android:name=".activity.SpecialTestActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.CourseActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.FlashCardActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.SyllabusActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.AdminHomeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.ReviewTestListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.ReviewTestActivity"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".activity.ImageFullScreen"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".activity.AnalyticsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".activity.StartReviewTestActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".activity.OneTestAnalyticsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.PDFActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.SyllabusPdfActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.FlashcardPdfActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.FullScreenImageActivity"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".activity.PractiveTestAnalytics"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

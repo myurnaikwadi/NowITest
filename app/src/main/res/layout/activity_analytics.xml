@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/activity_analytics_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/dropdown_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </include>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/graph"/>
+
+
+            <TextView
+                android:id="@+id/activity_analytics_percentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"
+                android:gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/activity_analyatics_linearlayout_aggrigate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--<com.github.mikephil.charting.charts.PieChart-->
+                        <!--android:id="@+id/activity_analytics_pie_chart_1"-->
+                        <!--android:layout_width="220dp"-->
+                        <!--android:layout_height="220dp">-->
+
+                    <!--</com.github.mikephil.charting.charts.PieChart>-->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/activity_analyatics_relativelayout_answer"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <!--<com.github.mikephil.charting.charts.PieChart-->
+                    <!--android:id="@+id/activity_analytics_pie_chart_2"-->
+                    <!--android:layout_width="220dp"-->
+                    <!--android:layout_height="220dp">-->
+
+                <!--</com.github.mikephil.charting.charts.PieChart>-->
+            </RelativeLayout>
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="center_horizontal">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_marginRight="20dp">-->
+
+                    <!--<com.nowitest.util.OpensansSemibold.TextViewRoboto-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/total_circle"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="60%\n 450 out of 700"-->
+                        <!--android:textColor="@color/edittext_hint"/>-->
+
+                    <!--<com.nowitest.util.OpensansRegular.TextViewRoboto-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:text="Total"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:textColor="@color/edittext_hint"/>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_marginLeft="20dp">-->
+
+                    <!--<com.nowitest.util.OpensansRegular.TextViewRoboto-->
+                        <!--android:id="@+id/dropdown_actionbar_textview_incorrect"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:text="25%\nIncorrect"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:textColor="@color/edittext_hint"/>-->
+
+                    <!--<com.nowitest.util.OpensansSemibold.TextViewRoboto-->
+                        <!--android:id="@+id/dropdown_actionbar_textview_circle_image"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/answer_circle"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_toRightOf="@id/dropdown_actionbar_textview_incorrect"-->
+                        <!--android:text="75%\n correct"-->
+                        <!--android:textColor="@color/edittext_hint"/>-->
+
+                    <!--<com.nowitest.util.OpensansRegular.TextViewRoboto-->
+                        <!--android:layout_below="@id/dropdown_actionbar_textview_circle_image"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:text="Answer"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:textColor="@color/edittext_hint"/>-->
+                <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal">
+
+                <!--<com.nowitest.util.OpensansRegular.TextViewRoboto-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:text="TOP WAITING PERIOD"-->
+                    <!--android:textColor="@color/edittext_hint"/>-->
+
+                <!--<com.nowitest.util.OpensansSemibold.TextViewRoboto-->
+                    <!--android:id="@+id/activity_analytics_tetxview_timetaken"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:text="15 Minute"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:textColor="@color/edittext_hint"/>-->
+
+                <!--<com.nowitest.util.OpensansRegular.TextViewRoboto-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:text="for"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:textColor="@color/edittext_hint"/>-->
+
+                <com.nowitest.util.OpensansSemibold.TextViewRoboto
+                    android:id="@+id/activity_analytics_tetxview_timetaken_for_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Most Waited"
+                    android:background="@drawable/green_btn"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

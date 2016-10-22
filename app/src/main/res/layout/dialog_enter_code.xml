@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="245dp"
+    android:background="@drawable/enter_code_white_box_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.nowitest.util.OpensansSemibold.TextViewRoboto
+            android:id="@+id/dialog_enter_code_textviewt_testname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/actionBar"
+            android:textSize="20dp"/>
+
+        <com.nowitest.util.OpensansRegular.EditTextRoboto
+            android:id="@+id/dialog_enter_code_edittext_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_field_active"
+            android:hint="@string/enter_code"
+            android:textColorHint="@color/edittext_hint"
+            android:singleLine="true"/>
+
+        <com.nowitest.util.OpensansSemibold.ButtonTextRoboto
+            android:id="@+id/dialog_enter_code_button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_submit"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_btn"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:layout_marginTop="45dp"/>
+    </LinearLayout>
+</LinearLayout>

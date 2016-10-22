@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp">
+
+            <com.nowitest.util.OpensansRegular.EditTextRoboto
+                android:id="@+id/activity_student_login_edittext_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:hint="@string/hint_user_name"
+                android:textColorHint="@color/edittext_hint"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/selector_edittext"
+                android:singleLine="true"
+                android:textColor="@color/black"/>
+
+            <com.nowitest.util.OpensansRegular.EditTextRoboto
+                android:id="@+id/activity_student_login_edittext_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:hint="@string/hint_password"
+                android:textColorHint="@color/edittext_hint"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="textPassword"
+                android:background="@drawable/selector_edittext"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+
+            <com.nowitest.util.OpensansSemibold.ButtonTextRoboto
+                android:id="@+id/activity_student_login_button_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_login"
+                android:textColor="@color/white"
+                android:background="@drawable/blue_btn"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:layout_marginTop="25dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

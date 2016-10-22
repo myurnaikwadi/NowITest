@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <com.nowitest.util.OpensansLight.TextViewRoboto
+            android:id="@+id/item_list_notice_center_textview_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It is a long established fact that a reader will be distracted by the readable content of a page when"
+            android:textColor="@color/testtextcolor"
+            android:textSize="18dp"/>
+
+        <RelativeLayout
+            android:id="@+id/item_list_notice_center_relativelayout"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/item_list_notice_center_textview_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <com.nowitest.util.OpensansSemibold.TextViewRoboto
+                android:id="@+id/item_list_notice_center_textview_posted_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/posted_on"
+                android:textColor="@color/edittext_hint"
+                android:textSize="16dp"/>
+
+            <com.nowitest.util.OpensansRegular.TextViewRoboto
+                android:id="@+id/item_list_notice_center_textview_posted_on_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8 Aug 2016"
+                android:textColor="@color/edittext_hint"
+                android:textSize="16dp"
+                android:layout_toRightOf="@id/item_list_notice_center_textview_posted_on"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+        
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/divider_line"
+            android:layout_below="@id/item_list_notice_center_relativelayout"/>
+    </RelativeLayout>
+</LinearLayout>

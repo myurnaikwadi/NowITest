@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/actionBar">
+
+        <com.nowitest.util.OpensansRegular.TextViewRoboto
+            android:id="@+id/activity_quizz_textView_actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="Test Name 1"
+            android:textSize="18dp"
+            android:textColor="@color/white"/>
+
+        <com.nowitest.util.OpensansRegular.TextViewRoboto
+            android:id="@+id/activity_quizz_textView_actionbar_timing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="Remaining Time "
+            android:textSize="18dp"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/activity_start_test_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.nowitest.util.OpensansRegular.TextViewRoboto
+                    android:id="@+id/activity_quizz_textView_question_no"
+                    android:layout_below="@+id/quizProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    android:textSize="18dp"
+                    android:text="1"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/edittext_hint"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"/>
+
+                <ImageView
+                    android:id="@+id/activity_quizz_imageview_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_launcher"/>
+
+                <com.nowitest.util.OpensansRegular.TextViewRoboto
+                    android:id="@+id/activity_quizz_textView_question"
+                    android:layout_below="@+id/quizProgress"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    android:textSize="18dp"
+                    android:text=""
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/edittext_hint"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/activity_quizz_textView_question"
+                android:orientation="vertical"
+                android:layout_above="@+id/activity_quizz_button_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/dynamicCheckBox"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--<com.nowitest.util.OpensansRegular.TextViewRoboto-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="18dp"-->
+                <!--android:text="1. What is capital of India?"/>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/test_name_ans_box_active"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<com.nowitest.util.OpensansSemibold.TextViewRoboto-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="A"-->
+                    <!--android:padding="10dp"/>-->
+
+                <!--<com.nowitest.util.OpensansRegular.TextViewRoboto-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Delhi"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:textSize="18dp"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/test_name_ans_box_inactive"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="5dp">-->
+
+                <!--<com.nowitest.util.OpensansSemibold.TextViewRoboto-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="B"-->
+                    <!--android:padding="10dp"/>-->
+
+                <!--<com.nowitest.util.OpensansRegular.TextViewRoboto-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Mumbai"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:textSize="18dp"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/test_name_ans_box_inactive"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="5dp">-->
+
+                <!--<com.nowitest.util.OpensansSemibold.TextViewRoboto-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="c"-->
+                    <!--android:padding="10dp"/>-->
+
+                <!--<com.nowitest.util.OpensansRegular.TextViewRoboto-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Kolkata"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:textSize="18dp"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/test_name_ans_box_inactive"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="5dp">-->
+
+                <!--<com.nowitest.util.OpensansSemibold.TextViewRoboto-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="D"-->
+                    <!--android:padding="10dp"/>-->
+
+                <!--<com.nowitest.util.OpensansRegular.TextViewRoboto-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Chennai"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:textSize="18dp"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <com.nowitest.util.OpensansSemibold.ButtonTextRoboto
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/activity_start_test_button_save_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_save_next"
+                android:textColor="@color/white"
+                android:background="@drawable/blue_btn"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:layout_marginTop="25dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

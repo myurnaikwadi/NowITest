@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <com.nowitest.util.OpensansSemibold.TextViewRoboto
+            android:id="@+id/item_list_notice_center_textview_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/testtextcolor"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/divider_line"
+            android:layout_below="@id/item_list_notice_center_textview_description"/>
+    </RelativeLayout>
+</LinearLayout>

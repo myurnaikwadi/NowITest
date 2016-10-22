@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <com.nowitest.util.OpensansRegular.TextViewRoboto
+            android:id="@+id/item_list_test_textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Name 1"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/item_list_test_textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+            <com.nowitest.util.OpensansSemibold.TextViewRoboto
+                android:id="@+id/item_list_test_textview_total_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_question"
+                android:textColor="@color/edittext_hint"
+                android:textSize="16dp"/>
+
+            <com.nowitest.util.OpensansRegular.TextViewRoboto
+                android:id="@+id/item_list_test_textview_total_question_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="@color/testtextcolor"
+                android:textSize="16dp"
+                android:layout_toRightOf="@id/item_list_test_textview_total_question"
+                android:layout_marginLeft="5dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/item_list_test_textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <com.nowitest.util.OpensansSemibold.TextViewRoboto
+                android:id="@+id/item_list_test_textview_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/duration"
+                android:textColor="@color/edittext_hint"
+                android:textSize="16dp"/>
+
+            <com.nowitest.util.OpensansRegular.TextViewRoboto
+                android:id="@+id/item_list_test_textview_duration_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120 minute"
+                android:textColor="@color/testtextcolor"
+                android:textSize="16dp"
+                android:layout_toRightOf="@id/item_list_test_textview_duration"
+                android:layout_marginLeft="5dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_list_test_relativelayout"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/item_list_test_textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <com.nowitest.util.OpensansSemibold.TextViewRoboto
+                android:id="@+id/item_list_test_textview_marks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/marks"
+                android:textColor="@color/edittext_hint"
+                android:textSize="16dp"/>
+
+            <com.nowitest.util.OpensansRegular.TextViewRoboto
+                android:id="@+id/item_list_test_textview_marks_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="@color/testtextcolor"
+                android:textSize="16dp"
+                android:layout_toRightOf="@id/item_list_test_textview_marks"
+                android:layout_marginLeft="5dp"/>
+
+        </RelativeLayout>
+        
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/divider_line"
+            android:layout_below="@id/item_list_test_relativelayout"/>
+    </RelativeLayout>
+</LinearLayout>
